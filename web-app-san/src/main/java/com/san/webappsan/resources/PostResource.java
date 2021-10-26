@@ -1,6 +1,6 @@
 package com.san.webappsan.resources;
 
-import java.net.URL;
+import com.san.webappsan.resources.util.URL;
 import java.util.List;
 
 import com.san.webappsan.domain.Post;
@@ -27,6 +27,13 @@ public class PostResource {
     public ResponseEntity<Post> findById(@PathVariable String id) {
         Post obj = service.findById(id);
         return ResponseEntity.ok().body(obj);
+    }
+
+    @RequestMapping(value = "/titlesearch", method=RequestMethod.GET)
+    public ResponseEntity<List<Post>> findByTitle(@RequestParam(value="text", defaultValue="") String text) {
+        text = URL.decodeParam(text);
+        List<Post> list = service.findByTitle(text);
+        return ResponseEntity.ok().body(list);
     }
 
 

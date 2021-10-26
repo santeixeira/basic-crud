@@ -1,5 +1,6 @@
 package com.san.webappsan.services;
 
+import java.util.List;
 import java.util.Optional;
 
 import com.san.webappsan.domain.Post;
@@ -20,7 +21,9 @@ public class PostService {
         return obj.orElseThrow(() -> new ObjectNotFoundException("Object not found"));
     }
 
-    
+    public List<Post> findByTitle(String text) {
+        return repo.searchTitle(text);
+    }
 
 
 }
