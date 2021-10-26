@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Optional;
 
 import com.san.webappsan.domain.User;
+import com.san.webappsan.dto.UserDTO;
 import com.san.webappsan.repository.UserRepository;
 import com.san.webappsan.services.exception.ObjectNotFoundException;
 
@@ -25,6 +26,13 @@ public class UserService {
         return obj.orElseThrow(() -> new ObjectNotFoundException("Object not found"));
     }
 
+    public User insert(User obj) {
+        return repo.insert(obj); 
+    }
+
+    public User fromDTO(UserDTO objDto) {
+        return new User(objDto.getId(), objDto.getName(), objDto.getEmail());
+    }
 
 
 }
