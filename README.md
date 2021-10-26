@@ -1,6 +1,6 @@
 # web-app-java
 
-+ I'm changing my stack to Java/JavaScript because Python has to many ways to follow, but it's more requested when make uses of Web Scraping, Automation and Data Analysis, that I do not have any intention to have a Job on theses skills, of course I'll learn about those for personal enrichment, but nothing professionally, because my goal now is to create websites and softwares apps, also a little of iOS/Android apps.
++ I'm changing my stack to Java/JavaScript because Python has to many ways to follow, but it's more requested when make uses of Web Scraping, RPA and Data Analysis, that I do not have any intention to have a Job on theses skills, of course I'll learn about those for personal enrichment, but nothing professionally, because my goal now is to create websites and softwares apps, also a little of iOS/Android apps.
 
 This repository has an training value, my Java's course on Udemy website is offering this experience to create a basic CRUD web application. The API used is Spring Boot 2.0, using generated Maven Project on VS Code implemented with NoSQL Database, MongoDB, to save my data requests.
 
